@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather search</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+  <script type="module" crossorigin src="/weather-search/assets/index-D2VdxICA.js"></script>
+  <link rel="stylesheet" crossorigin href="/weather-search/assets/index-DZtkp9h0.css">
+</head>
+<body class="default-bg">
+    <div class="app-container">
+        <div class="app-header">
+            <h1 class="app-title">Weather Forecast</h1>
+            <p class="app-subtitle">Get real-time weather updates</p>
+        </div>
+        
+        <div class="search-container">
+            <div class="search-group">
+                <input type="text" id="city" placeholder="Enter city name" aria-label="City name">
+                <button class="search-btn" id="btn" aria-label="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </button>
+                <button class="location-btn" id="location-btn" aria-label="Use current location">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <div class="weather-display" id="weather-info">
+        </div>
+        
+        <div class="recent-searches">
+            <div class="section-header">
+                <h3 class="section-title">Recent Searches</h3>
+                <button class="clear-btn" id="clear-btn">Clear All</button>
+            </div>
+            <div class="city-list" id="city-list">
+               
+            </div>
+        </div>
+    </div>
+</body>
+</html>
